@@ -5,9 +5,11 @@ class App extends Component {
   state = {
     cohortName: 'Tarjan',
     salutation: 'Hello',
-    name: 'Gabriel',
+    user: {
+      name: 'Gabriel',
     whereILive: 'Loring Park',
     sport: 'soccer'
+    }
   }
   render() {
     return (
@@ -15,9 +17,9 @@ class App extends Component {
        <h1>{this.state.cohortName} Learns State </h1>
     <h2>{this.state.salutation} my name is {this.state.name}</h2>
     <ul>
-    <li>My name is {this.state.name}</li>
-    <li>I live in {this.state.whereILive}</li>
-    <li>I play {this.state.sport}</li>
+    <li>My name is {this.state.user.name}</li>
+    <li>I live in {this.state.user.whereILive}</li>
+    <li>I play {this.state.user.sport}</li>
     </ul>
       </div>
     );
